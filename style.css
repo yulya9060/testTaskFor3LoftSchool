@@ -162,6 +162,14 @@ a {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.about__icon {
+  width: 140px;
+  height: 140px; }
+
+.about__img {
+  max-width: 100%;
+  max-height: 100%; }
+
 .footer {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -208,6 +216,8 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  .about__title {
+    font-family: 'FiraSans', Arial, Helvetica, sans-serif; }
 
 .title {
   font-family: 'FiraSans', Arial, Helvetica, sans-serif;
