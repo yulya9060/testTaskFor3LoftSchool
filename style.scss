@@ -152,6 +152,7 @@ html{
 .about__icon{
     width:140px;
     height: 140px;
+    margin-right: 21px;
 }
 
 .about__img{
@@ -183,14 +184,47 @@ html{
 
 .about{
     display: flex;
-    padding-top: 72px;
     flex-direction: column;
     align-items: center;
 
     &__title{
         font-family: 'FiraSans', Arial, Helvetica, sans-serif;
+        color: #212121;
+        font-weight: 400;
+        font-size: 21px;
+    }
+
+    &__list{
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    &__item{
+        display: flex;
+        margin-right: 40px;
+    }
+
+    &__content{
+        width: 50%;
+    }
+
+    &__text{
+        margin-top: 20px;
+        text-align: left;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    &__link{
+        color: #29b0f5;
+
+        &:hover{
+            color: #29b0f5;
+        }
     }
 }
+
 
 .title{
     font-family: 'FiraSans', Arial, Helvetica, sans-serif;
@@ -198,6 +232,8 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 76px;
 
     &__main{
         font-weight: 500;

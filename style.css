@@ -164,7 +164,8 @@ a {
 
 .about__icon {
   width: 140px;
-  height: 140px; }
+  height: 140px;
+  margin-right: 21px; }
 
 .about__img {
   max-width: 100%;
@@ -206,7 +207,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 72px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -217,7 +217,36 @@ a {
   -ms-flex-align: center;
   align-items: center; }
   .about__title {
-    font-family: 'FiraSans', Arial, Helvetica, sans-serif; }
+    font-family: 'FiraSans', Arial, Helvetica, sans-serif;
+    color: #212121;
+    font-weight: 400;
+    font-size: 21px; }
+  .about__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .about__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 40px; }
+  .about__content {
+    width: 50%; }
+  .about__text {
+    margin-top: 20px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px; }
+  .about__link {
+    color: #29b0f5; }
+    .about__link:hover {
+      color: #29b0f5; }
 
 .title {
   font-family: 'FiraSans', Arial, Helvetica, sans-serif;
@@ -237,7 +266,9 @@ a {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 76px; }
   .title__main {
     font-weight: 500;
     font-style: normal;
