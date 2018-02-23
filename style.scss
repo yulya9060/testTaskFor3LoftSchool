@@ -141,11 +141,11 @@ html{
 }
 
 .content{
-    width: 940px;
     height: 100%;
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;
+    width: 100%;
 
 }
 
@@ -186,6 +186,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     &__title{
         font-family: 'FiraSans', Arial, Helvetica, sans-serif;
@@ -225,6 +226,9 @@ html{
     }
 }
 
+.container{
+    width: 940px;
+}
 
 .title{
     font-family: 'FiraSans', Arial, Helvetica, sans-serif;
@@ -248,4 +252,142 @@ html{
         color: #727272;
     }
     
+}
+
+.courses{
+    background: url('./images/gplaypattern.png') center center repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__container{
+        margin-bottom: 60px;
+    }
+
+    &__list{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__item{
+        width: 30%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover  {
+             .courses__icon{
+                border-bottom: 4px solid #8cc34b;
+            }
+             .courses__title{
+                color: #8cc34b;
+            }
+           
+        }
+        
+    }
+    &__icon{
+        width: 100%; 
+        height: 162px;
+        overflow: hidden;
+    }
+    &__img{
+        max-width: 100%;
+    }
+
+    &__title{
+        font-family: 'FiraSans', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 21px;
+        color:#212121;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+
+    &__text{
+        font-family: 'FiraSans', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 14px;
+        color: #727272;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    &__time{
+        font-family: 'FiraSans', Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 14px;
+        color: #b6b6b6;
+        margin-bottom: 20px;
+    }
+
+    &__desc{
+        padding: 15px 20px 8px;
+    }
+}
+
+
+.checkbox_hidden{
+    display: none;
+
+    &:checked {
+        + .checkbox_fake::before{
+            content: "";
+            position: absolute;
+            display: block;
+            background: #8cc34b;
+            top: -2px;
+            left: -2px;
+            width: 18px;
+            height: 18px;
+            border-radius: 10%;
+        }
+
+         
+    }
+
+}
+.checkbox__other .checkbox_fake:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 11px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.checkbox_fake{
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    position: relative;
+    border: 2px solid #b6b6b6;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.checkbox__other{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+
+.courses__item--checked{
+    transition: .5s;
+    background: black;
 }
