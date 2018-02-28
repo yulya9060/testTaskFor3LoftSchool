@@ -276,7 +276,8 @@ html{
     &__item{
         width: 30%;
         //visibility: visible;
-        transition-duration: 2s;
+      //  transition-duration: 4s;
+        transition-delay: 2s;
        // transition-property: visibility;
        transition-property: display;
         margin-right: 20px;
@@ -284,7 +285,6 @@ html{
         position: relative;
         z-index: 1;
         height: 100%;
-
 
         &:last-child{
             margin-right: 0;
@@ -370,7 +370,7 @@ html{
     display: none;
 
     &:checked {
-        + .checkbox_fake::before{
+        + .checkbox_fake:before{
             content: "";
             position: absolute;
             display: block;
@@ -402,6 +402,7 @@ html{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+  
 .checkbox_fake{
     width: 18px;
     height: 18px;

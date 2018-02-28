@@ -284,9 +284,9 @@ a {
     flex-wrap: wrap; }
   .courses__item {
     width: 30%;
-    -webkit-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
+    -webkit-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
     -webkit-transition-property: display;
     -o-transition-property: display;
     transition-property: display;
@@ -350,7 +350,7 @@ a {
 
 .checkbox_hidden {
   display: none; }
-  .checkbox_hidden:checked + .checkbox_fake::before {
+  .checkbox_hidden:checked + .checkbox_fake:before {
     content: "";
     position: absolute;
     display: block;
