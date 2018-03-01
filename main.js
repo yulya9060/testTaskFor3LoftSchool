@@ -12,8 +12,8 @@ Array.prototype.filter.call(checkbox,function(check)
             if (this.parentNode.parentNode.parentNode.parentNode.parentNode.classList.contains('courses__item--checked')){
                 count++;
                 setTimeout(function(){
-                    elements.forEach(elem).style.display = 'none';
-                },200);
+                    check.parentNode.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
+                },2000);
                
                 if (liChecked.length == elements.length){
                     setTimeout(function () {
