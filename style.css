@@ -196,7 +196,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 51px; }
   .about__title {
     font-family: 'FiraSans', Arial, Helvetica, sans-serif;
     color: #212121;
