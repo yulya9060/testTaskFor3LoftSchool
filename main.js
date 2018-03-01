@@ -13,7 +13,7 @@ Array.prototype.filter.call(checkbox,function(check)
                 count++;
                 setTimeout(function(){
                     check.parentNode.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
-                },2000);
+                },3000);
                
                 if (liChecked.length == elements.length){
                     setTimeout(function () {
